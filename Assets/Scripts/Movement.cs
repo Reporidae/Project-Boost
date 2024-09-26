@@ -1,13 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    // PARAMETERS - for tuning, typically set in the editor
+    // CACHE - e.g. references for readbility or speed
+    // STATE - privvate instance (member) variables
+    // Overrides는 인스턴스에만 반영한 정보를 프리팹에도 업데이트 하는 것 (40번째 강의에 나옴)
+
     [SerializeField] float mainThrust = 100f;
     [SerializeField] float rotationThrust = 100f;
+    [SerializeField] AudioClip mainEngine;
+
     Rigidbody rb;
     AudioSource audioSource;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +39,7 @@ public class Movement : MonoBehaviour
             rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
             if(!audioSource.isPlaying)
             {
-                audioSource.Play();
+                audioSource.PlayOneShot(mainEngine);
             }
         }
         else

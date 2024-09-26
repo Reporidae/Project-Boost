@@ -369,24 +369,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 865a960ee32530846b9986c17f02512c, type: 3}
---- !u!1 &2095261617 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7944665804504167506, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
-  m_PrefabInstance: {fileID: 3905680238083525015}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2095261618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095261617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f7a5ab667a661f4aa5acad1464062a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelLoadDelay: 2
 --- !u!1001 &2754239538877521292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -561,25 +543,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5673153358934500003, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7944665804504167506, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 8393971070813451138, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7944665804504167506, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2095261618}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
 --- !u!1001 &9048097820270481168
 PrefabInstance:

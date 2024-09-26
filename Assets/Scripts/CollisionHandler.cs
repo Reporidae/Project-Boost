@@ -8,9 +8,24 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
+    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip crash;
 
+    AudioSource audioSource; //캐싱
+
+    bool isTransitioning = false;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void OnCollisionEnter(Collision other)
     {
+        if(isTransitioning)
+        {
+            return;
+        }
+
         switch (other.gameObject.tag)
         {
             case "Friendly":
@@ -27,15 +42,19 @@ public class CollisionHandler : MonoBehaviour
 
     void StartSuccessSequence()
     {
-        // todo add SFX upon crash
-        // todo add particle effect upon crash
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(success);
+        // todo add particle effect upon success
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
     }
 
     void StartCrashSequence()
     {
-        // todo add SFX upon crash
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(crash);
         // todo add particle effect upon crash
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
