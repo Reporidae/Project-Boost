@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!198 &611961918 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3941262872278642127, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+  m_PrefabInstance: {fileID: 3905680238083525015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +374,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 865a960ee32530846b9986c17f02512c, type: 3}
+--- !u!198 &1691693414 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9061895126032834419, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+  m_PrefabInstance: {fileID: 3905680238083525015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1981372042 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2619069403157882196, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+  m_PrefabInstance: {fileID: 3905680238083525015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2754239538877521292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,13 +518,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1844901725524501921, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: m_Name
+      value: Rocket Body
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235957005293274196, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.22715
+      objectReference: {fileID: 0}
     - target: {fileID: 5235957005293274196, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.23
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 5235957005293274196, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.76
+      value: 2.95
       objectReference: {fileID: 0}
     - target: {fileID: 5235957005293274196, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -546,6 +569,34 @@ PrefabInstance:
     - target: {fileID: 7944665804504167506, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393971070813451138, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: mainEngineParticles
+      value: 
+      objectReference: {fileID: 1981372042}
+    - target: {fileID: 8393971070813451138, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: leftThrusterParticles
+      value: 
+      objectReference: {fileID: 611961918}
+    - target: {fileID: 8393971070813451138, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: rightThrusterParticles
+      value: 
+      objectReference: {fileID: 1691693414}
+    - target: {fileID: 9068515701177873876, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.076409
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068515701177873876, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.94267106
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068515701177873876, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9978542
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068515701177873876, guid: cb7ff548ca6e4ff46990a4f08823939c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
