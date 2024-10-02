@@ -536,7 +536,7 @@ Transform:
   m_GameObject: {fileID: 7418466569002678290}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.172, z: 0}
+  m_LocalPosition: {x: 0, y: 0.69, z: 0}
   m_LocalScale: {x: 1, y: 0.81489635, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -553,8 +553,8 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 30
-  m_Range: 7
+  m_Intensity: 15
+  m_Range: 9.211373
   m_SpotAngle: 45
   m_InnerSpotAngle: 4
   m_CookieSize: 10
@@ -618,6 +618,7 @@ GameObject:
   - component: {fileID: 5673153358934500003}
   - component: {fileID: 5526009765338695470}
   - component: {fileID: 5591956513187606353}
+  - component: {fileID: 4692257796385220470}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -841,6 +842,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7050734, y: 2.005424, z: 1}
   m_Center: {x: 0.00025177002, y: 0.05539728, z: 0}
+--- !u!114 &4692257796385220470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7944665804504167506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0172028998b298748873562569a01148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8595314666566622255
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +897,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 8
   m_Range: 6.55
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
